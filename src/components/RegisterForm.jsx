@@ -32,9 +32,6 @@ export default function RegisterForm(){
                 </div>
            
             <button className="w-full bg-black text-white p-2 mt-6">Entrar</button>
-            <div className="flex justify-center mt-4">
-                <Link href="#" className="underline focus:text-gray-500">Cadastre-se</Link>
-            </div>
         </form>
     )
 }
