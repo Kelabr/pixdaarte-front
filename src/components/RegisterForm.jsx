@@ -14,7 +14,7 @@ export default function RegisterForm(){
                 </div>
                 <div className="flex flex-col gap-2">
                     <label className="font-medium">Chave Pix</label>
-                    <span className="sm text-gray-500 text-[12px]">*Aconselhamos que senha uma chave aleatória</span>
+                    <span className="sm text-gray-500 text-[12px]">*Aconselhamos que use uma chave aleatória</span>
                     <input className="border-2 p-2 rounded-lg" type="text"/>
                 </div>
                 <div className="flex flex-col gap-2 mb-2">
