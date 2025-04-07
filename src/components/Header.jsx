@@ -19,7 +19,7 @@ export default function Header(){
                     <SheetTitle></SheetTitle>
                 </SheetHeader>
                 <ul className="flex flex-col gap-4 px-2">
-                    <Link href="#" className="flex items-center gap-1 text-gray-500 font-medium focus:text-black"><User size={20}/> Minha Conta</Link>
+                    <Link href="/login" className="flex items-center gap-1 text-gray-500 font-medium focus:text-black"><User size={20}/> Minha Conta</Link>
                     <Link href="/sobre" className="flex items-center gap-1 text-gray-500 font-medium focus:text-black"><CircleAlert size={20}/> Sobre</Link>
                     <Link href="/termo-uso-privacidade" className="flex items-center gap-1 text-gray-500 font-medium focus:text-black"><Lock size={20}/>Uso e Privacidade</Link>
                 </ul>
