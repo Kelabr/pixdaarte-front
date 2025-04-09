@@ -1,12 +1,15 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 export default function RegisterForm(){
 
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
     const [error, setError] = useState("")
+    const router = useRouter()
+
 
     async function handleSubmit(event){
         event.preventDefault()
@@ -30,7 +33,8 @@ export default function RegisterForm(){
                 headers: {
                     "Content-Type":"application/json"
                 },
-                body:JSON.stringify({nome, email, pix, cidade, password})
+                body:JSON.stringify({nome, email, pix, cidade, password}),
+                credentials:"include"
             })
 
             if(!response.ok){
@@ -42,7 +46,7 @@ export default function RegisterForm(){
             setError("*Erro no cadastro")
         }
 
-        console.log("Login feito com sucesso")
+        router.push("/teste")
 
     }
 
